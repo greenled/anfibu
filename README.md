@@ -41,5 +41,5 @@ Buzz
 Requires Python 3.8. Install it and run:
 
 ```
-python main.py
+python src/main.py
 ```
