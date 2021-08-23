@@ -37,3 +37,19 @@ class Test(TestCase):
         # Assert there are exactly 33 "Fizz"es
         fizzes = [item for item in fizz_buzz_list if item == "Fizz"]
         self.assertEqual(27, len(fizzes))
+
+        # Assert first ten multiples of 5 (not 3) are "Buzz"
+        self.assertEqual("Buzz", fizz_buzz_list[4])
+        self.assertEqual("Buzz", fizz_buzz_list[9])
+        self.assertEqual("Buzz", fizz_buzz_list[19])
+        self.assertEqual("Buzz", fizz_buzz_list[24])
+        self.assertEqual("Buzz", fizz_buzz_list[34])
+        self.assertEqual("Buzz", fizz_buzz_list[39])
+        self.assertEqual("Buzz", fizz_buzz_list[49])
+        self.assertEqual("Buzz", fizz_buzz_list[54])
+        self.assertEqual("Buzz", fizz_buzz_list[64])
+        self.assertEqual("Buzz", fizz_buzz_list[69])
+
+        # Assert there are exactly 14 "Buzz"es
+        buzzes = [item for item in fizz_buzz_list if item == "Buzz"]
+        self.assertEqual(14, len(buzzes))

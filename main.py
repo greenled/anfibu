@@ -11,6 +11,8 @@ def fizz_buzz_generator() -> Iterator[str]:
             yield "FizzBuzz"
         elif num % 3 == 0:
             yield "Fizz"
+        elif num % 5 == 0:
+            yield "Buzz"
         else:
             yield str(num)
         num += 1
