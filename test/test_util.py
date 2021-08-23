@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from main import fizz_buzz_generator
+from src.util import fizz_buzz_generator
 
 
 class Test(TestCase):
