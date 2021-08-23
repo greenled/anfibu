@@ -18,6 +18,6 @@ def fizz_buzz_generator() -> Iterator[str]:
         num += 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     for fizz_buzz_item in fizz_buzz_generator():
         print(fizz_buzz_item)
