@@ -38,7 +38,7 @@ Buzz
 
 ## Installation
 
-Requires Python 3.8. Install it and run:
+Requires Python 3.6/3.7/3.8/3.9. After installing Python run:
 
 ```
 python src/main.py
