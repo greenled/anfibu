@@ -7,7 +7,9 @@ def fizz_buzz_generator() -> Iterator[str]:
     """
     num = 1
     while num <= 100:
-        if num % 3 == 0:
+        if num % 3 == 0 and num % 5 == 0:
+            yield "FizzBuzz"
+        elif num % 3 == 0:
             yield "Fizz"
         else:
             yield str(num)
