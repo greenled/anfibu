@@ -18,5 +18,9 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           architecture: ${{ matrix.architecture }}
+      - name: Install coverage
+        run: pip install coverage
       - name: Run tests
-        run: python -m unittest
+        run: coverage run -m unittest
+      - name: Print coverage report
+        run: coverage report -m
